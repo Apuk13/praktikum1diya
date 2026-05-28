@@ -7,9 +7,7 @@ class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Dokter"),
-      ),
+      appBar: AppBar(title: Text("Dokter")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -27,15 +25,10 @@ class Page2 extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => Page3(),
-                  ),
+                  MaterialPageRoute(builder: (context) => Page3()),
                 );
               },
-              icon: Icon(
-                Icons.medical_services,
-                color: Colors.white,
-              ),
+              icon: Icon(Icons.medical_services, color: Colors.white),
               label: Text(
                 "Dokter Umum",
                 style: TextStyle(fontSize: 18, color: Colors.white),
@@ -58,7 +51,7 @@ class Page2 extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                 ),
               ),
-              child:Text(
+              child: Text(
                 "Dokter Gigi",
                 style: TextStyle(fontSize: 18, color: Colors.white),
               ),
@@ -74,7 +67,7 @@ class Page2 extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                 ),
               ),
-              child:Text(
+              child: Text(
                 "Dokter Anak",
                 style: TextStyle(fontSize: 18, color: Colors.white),
               ),
